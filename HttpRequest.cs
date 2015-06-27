@@ -69,7 +69,7 @@ public class HttpRequest
 	
 	private IEnumerator DoRequest(string path, string method, byte[] bodyBytes)
 	{
-		TcpClient tcp = new TcpClient("stickystudiosprojects.com", 80);
+		TcpClient tcp = new TcpClient("myhost.com", 80);
 		NetworkStream stream = tcp.GetStream();
 		
 		string request 		= method+" "+path+" HTTP/1.0\r\n";
